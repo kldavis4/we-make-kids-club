@@ -21,6 +21,24 @@ export const PageCollection: Collection = {
       type: "rich-text",
       isBody: true,
       required: true
-    }
+    },
+    {
+      label: 'Testimonial',
+      name: 'testimonial',
+      type: 'object',
+      list: true,
+      fields: [
+        {
+          label: 'Title',
+          name: 'title',
+          type: 'string',
+        },
+        {
+          type: 'image',
+          label: 'Image',
+          name: 'imgSrc',
+        },
+      ],
+    },
   ]
 }
