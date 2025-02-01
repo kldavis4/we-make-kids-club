@@ -21,13 +21,18 @@
   "contactLinks": [
     {
       "title": "Instagram",
-      "link": "https://x.com/tinacms",
-      "icon": "TbBrandTwitter"
+      "link": "https://www.instagram.com/paintedbyaurelie/",
+      "icon": "TbBrandInstagram"
+    },
+    {
+      "title": "Etsy",
+      "link": "https://www.etsy.com/shop/paintedbyaurelie/?etsrc=sdt",
+      "icon": "TbBrandEtsy"
     },
     {
       "title": "Email",
-      "link": "https://tina.io/docs",
-      "icon": "TbBook2"
+      "link": "mailto:aurelie.lobster@gmail.com",
+      "icon": "TbMail"
     }
   ]
 }
