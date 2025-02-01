@@ -27,6 +27,13 @@ export const PageCollection: Collection = {
       name: 'testimonial',
       type: 'object',
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return {
+            label: item.title
+          }
+        },
+      },
       fields: [
         {
           label: 'Title',

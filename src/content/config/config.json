@@ -20,19 +20,14 @@
   ],
   "contactLinks": [
     {
-      "title": "Twitter",
+      "title": "Instagram",
       "link": "https://x.com/tinacms",
       "icon": "TbBrandTwitter"
     },
     {
-      "title": "Docs",
+      "title": "Email",
       "link": "https://tina.io/docs",
       "icon": "TbBook2"
-    },
-    {
-      "title": "GitHub",
-      "link": "https://github.com/tinacms/tinacms",
-      "icon": "TbBrandGithub"
     }
   ]
 }
