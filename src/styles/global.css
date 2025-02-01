@@ -5,7 +5,8 @@
  */
 
 :root {
-	--primary-blue: #4b4bee;
+	--primary-blue: #242054;
+	--secondary-blue: #4b4bee;
 	--primary-yellow: #ffd84b;
 	--background-cream: #faf6f1;
 	--primary-font: "Poppins", serif;
@@ -28,17 +29,19 @@ body {
 	line-height: 1.7;
 }
 main {
-	width: 1200px;
-	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 3em 1em;
-}
-article {
 	width: 720px;
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;
 }
+article,
+.header {
+	width: 720px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+	padding: 3em 1em;
+}
+
 h1,
 h2,
 h3,
@@ -55,6 +58,8 @@ h1 {
 	font-family: var(--header-font);
 	font-weight: 400;
   font-style: normal;
+	color: var(--secondary-blue);
+	text-align: center;
 }
 h2 {
 	font-size: 2.441em;
@@ -177,7 +182,7 @@ hr {
 .header-text {
 	text-align: center;
 	h1 {
-		color: var(--primary-blue);
+		color: var(--secondary-blue);
 		font-size: 2.5rem;
 		margin: 0;
 	}
@@ -192,7 +197,9 @@ hr {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 2rem;
+	margin: auto;
 	margin-bottom: 4rem;
+	max-width: 1200px;
 }
 
 .activity-card {
@@ -210,23 +217,18 @@ hr {
 	}
 }
 
-.about {
-	position: relative;
-	h2 {
-		color: var(--primary-blue);
-		font-size: 2rem;
-		text-align: center;
-	}
+.page-container {
+	width: 1200px;
 }
 
-.about-content {
+.page-content {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 2fr 1fr;
 	gap: 4rem;
 	align-items: center;
 }
 
-.about-text {
+.page-text {
 	p {
 		color: var(--primary-blue);
 		font-size: 1.1rem;
@@ -235,7 +237,7 @@ hr {
 	}
 }
 
-.about-image {
+.page-image {
 	position: relative;
 	height: 500px;
 	/* Add specific styling for the sliced image effect */
@@ -247,7 +249,7 @@ hr {
 		grid-template-columns: 1fr;
 	}
 
-	.about-content {
+	.page-content {
 		grid-template-columns: 1fr;
 	}
 

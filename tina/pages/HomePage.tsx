@@ -18,7 +18,7 @@ const HomePage = (props: Props) => {
 	const page = data.page;
 
 	return (
-		<main className="container">
+		<>
 			<header className="header">
 
 				<div className="header-text">
@@ -38,10 +38,11 @@ const HomePage = (props: Props) => {
 					</div>)}
 			</section>
 
-			<div data-tina-field={tinaField(page, "body")}>
+			<main data-tina-field={tinaField(page, "body")}>
 				<TinaMarkdown content={page.body} />
-			</div>
-		</main>
+			</main>
+
+		</>
 
 	)
 }
